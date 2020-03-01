@@ -1,6 +1,5 @@
 public class GameCC extends GameAI {
     
-
     public GameCC(int level){
         setDifficultyLevel(level);
         view = new View();
@@ -12,7 +11,6 @@ public class GameCC extends GameAI {
     void prepareToGame() {
         setPlayer1(new PlayerComp("first"));
         setPlayer2(new PlayerComp("second"));
-
         setCurrentPlayer(getPlayer2());
     }
 
@@ -23,7 +21,6 @@ public class GameCC extends GameAI {
         while(isGaming){
             view.clearScreen();
             view.printTitle(String.format("It's %s's turn to strike!", turnOfPlayer()));
-            
 
             textToDisplay = shoot(getComputerCoordinates());
             view.printOcean(getCurrentPlayer().getOcean(), getHasStarted());

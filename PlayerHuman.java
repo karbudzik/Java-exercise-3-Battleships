@@ -8,10 +8,10 @@ public class PlayerHuman extends Player {
     private HashMap<String, Integer> possibleShips;
     {
         possibleShips = new HashMap<>();
-        // possibleShips.put("Carrier", 5);
-        // possibleShips.put("Battleship", 4);
-        // possibleShips.put("Cruiser", 3);
-        // possibleShips.put("Submarine", 3);
+        possibleShips.put("Carrier", 5);
+        possibleShips.put("Battleship", 4);
+        possibleShips.put("Cruiser", 3);
+        possibleShips.put("Submarine", 3);
         possibleShips.put("Destroyer", 2);
     }
 
@@ -20,9 +20,8 @@ public class PlayerHuman extends Player {
         askForName(numOfUser);
         setOcean(new Ocean());
         view = new View();
-        askForShips(); // <--- odkomentować do właściwej gry!!!
+        askForShips(); 
     }
-
 
     private void askForName(String numOfUser) {
         view = new View();

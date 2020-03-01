@@ -8,7 +8,9 @@ public class PlayerComp extends Player {
     }
 
     private void placeShips() {
-        getOcean().addShip(0, 0, true, 3);
+        getOcean().addShip(0, 3, true, 2); 
+        getOcean().addShip(4, 0, true, 3);  
+        // placeholder to add algorithm to put all computer's ships on the board
     }
 
 }

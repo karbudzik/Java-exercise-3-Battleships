@@ -13,7 +13,6 @@ public class Main{
                 view.printText("You wrote incorrect number!");
             }
         }
-
         switch(option){
             case 1:
                 new GameHH();
@@ -25,9 +24,5 @@ public class Main{
                 new GameCC(1);
                 break;
         }
-        
-        
-        //GameHH myGame = new GameHH();
-        //GameCC myGame = new GameCC(1);
     }
 }

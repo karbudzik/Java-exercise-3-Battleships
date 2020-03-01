@@ -33,7 +33,6 @@ public class View {
         Scanner scannerFromUser = new Scanner(System.in);
         int input = scannerFromUser.nextInt();
 
-        
         return input;
     }
 

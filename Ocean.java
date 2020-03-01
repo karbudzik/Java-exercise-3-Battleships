@@ -106,8 +106,7 @@ public class Ocean{
     }
 
     private boolean validateNotOverlap(int x, int y, boolean isHorizontal, int length) 
-                                        throws IllegalArgumentException 
-        { // czy to wystarczy jako obsługa wyjątków?
+                                        throws IllegalArgumentException { 
         for(int index = 0; index < length; index++){
             
             int[] coordinates = (isHorizontal) ? new int[]{y, x+index} : new int[]{y+index, x};

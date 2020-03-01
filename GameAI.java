@@ -13,12 +13,10 @@ public abstract class GameAI extends Game {
             generator = new Random();
             x = generator.nextInt(10);
             y = generator.nextInt(10);
-            
         }
         int[] coordinatesAsArray = new int[]{x, y};
         return coordinatesAsArray;
     }
-
 
     protected int[] getComputerCoordinates(){
         int[] coordinatesAsInt = new int[] {};
@@ -27,9 +25,9 @@ public abstract class GameAI extends Game {
                 coordinatesAsInt = randomCoordinates();
                 break;
             case 2:
-                break;
+                break; // placeholders to add extra difficulty levels
             case 3:
-                break;
+                break; // placeholders to add extra difficulty levels
         }
 
         return coordinatesAsInt;

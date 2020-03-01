@@ -1,7 +1,6 @@
 public abstract class Player {
     private String name;
     private Ocean ocean;
-    
 
     public boolean hasLost(){
         return ocean.hasLost();
